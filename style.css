@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap");
+/* defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  font-weight: bold;
+  color: gray;
+}
+:root {
+  --bgcolor: rgb(55, 55, 82);
+}
+body {
+  background-color: var(--bgcolor);
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+.logo span {
+  color: purple;
+}
+/* defaults end */
+/* grid box */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  grid-template-rows: 1fr 20fr 80fr;
+}
+.header {
+  grid-area: 1 / 1 / 2 / 4;
+  z-index: 100;
+  background-attachment: fixed;
+  position: sticky;
+  top: 0;
+  border-bottom: 10px solid;
+}
+div.background {
+  grid-area: 2 / 1 / 3 /4;
+}
+.content {
+  grid-area: 3 / 1 / 4 / 4;
+  background-color: red;
+}
+/* grid box end */
+/* flex */
+
+.flex {
+  display: flex;
+
+  align-items: center;
+  background-color: white;
+  font-size: 20px;
+
+  width: 100%;
+  -webkit-box-shadow: 12px 10px 15px 7px #8e5cff, -10px -7px 27px 1px #8e5cff,
+    8px -11px 37px -17px rgba(0, 0, 0, 0.18);
+  box-shadow: 12px 10px 15px 7px #8e5cff, -10px -7px 27px 1px #8e5cff,
+    8px -11px 37px -17px rgba(0, 0, 0, 0.18);
+}
+
+.flex div {
+  text-transform: uppercase;
+}
+.flex div a {
+  text-decoration: none;
+  display: flex;
+  transition: 0.5s;
+}
+.flex div::after {
+  content: " ";
+  transition: 0.5s;
+  width: 0%;
+  height: 4px;
+  background-color: purple;
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+}
+.flex div a:hover {
+  color: purple;
+}
+.flex div a:hover .flex {
+  -webkit-box-shadow: 12px 10px 15px 7px #8e5cff, -10px -7px 27px 1px #8e5cff,
+    8px -11px 37px -17px rgba(0, 0, 0, 0.18);
+  box-shadow: 12px 10px 15px 7px #8e5cff, -10px -7px 27px 1px #8e5cff,
+    8px -11px 37px -17px rgba(0, 0, 0, 0.18);
+}
+.flex div:hover::after {
+  width: 100%;
+  content: "";
+}
+.logo {
+  font-size: 37px;
+  order: 3;
+  display: flex;
+  margin-left: auto;
+}
+.contact-us {
+  order: 4;
+  margin-left: auto;
+  margin-right: 20px;
+}
+.packages {
+  margin-left: 20px;
+}
+.About {
+  margin-left: 20px;
+}
+/* background And  title*/
+.login-form #button {
+  background-color: transparent;
+  height: 50px;
+  border: 5px solid transparent;
+  border-image: linear-gradient(45deg, purple, #8e5cff, blue);
+  border-image-slice: 1;
+  color: #8e5cff;
+}
+.login-form #button:hover {
+  cursor: pointer;
+  transform: translatey(10px);
+}
+.background {
+  background: url(./images/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background .title h1 {
+  font-size: 100px;
+}
+.background .title span {
+  color: purple;
+  transition: 5s;
+}
+
+/* login form */
+.login-card {
+  background-color: white;
+  border-radius: 10px;
+  width: 25%;
+  height: 25%;
+  margin-left: 80px;
+  opacity: 1;
+  -webkit-box-shadow: 12px 10px 15px 7px #8e5cff, -10px -7px 27px 1px #8e5cff,
+    8px -11px 37px -17px rgba(0, 0, 0, 0.18);
+  box-shadow: 12px 10px 15px 7px #8e5cff, -10px -7px 27px 1px #8e5cff,
+    8px -11px 37px -17px rgba(0, 0, 0, 0.18);
+}
+.login-form li {
+  list-style: none;
+  margin: 20px;
+}
+.login-form li input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 2px white solid;
+  transition: 0.5s;
+}
+
+.login-form li input:focus {
+  border-bottom: 2px #8e5cff solid;
+}
+
+/* end login form */
+/* end background */
+/* content */
+.content {
+  background-color: var(--bgcolor);
+  box-shadow: 0px 0px 10px 10px currentColor;
+  color: #8e5cff;
+}
+.p1 {
+  font-size: 80px;
+  text-align: center;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
+}
+.p1 span {
+  color: purple;
+}
+.paragraph {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+.paragraph .circle {
+  background-color: transparent;
+  width: 120px;
+  height: 120px;
+  border-radius: 200%;
+  border: 5px solid purple;
+  text-align: center;
+  font-size: 100px;
+  align-self: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.paragraph .circle p {
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.75);
+}
+/* pack */
+.section1 {
+  width: 100%;
+  height: 50%;
+}
+.packs {
+  height: 100%;
+  width: 100%;
+
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+}
+.packs .pack1 {
+  background-color: white;
+  border-radius: 10px;
+  grid-column: 2/5;
+  grid-row: 2/5;
+  padding: 10px;
+}
+.pack1 img {
+  width: 100%;
+  height: 50%;
+}
+.pack1 h1 {
+  color: purple;
+  text-align: center;
+}
+#button1 {
+  background-color: transparent;
+  margin-top: 40px;
+  position: relative;
+  padding: 10px;
+  font-size: 20px;
+  color: #8e5cff;
+  top: -25px;
+  border-radius: 10px;
+}
+
+.packs .pack2 {
+  background-color: white;
+  border-radius: 10px;
+  grid-column: 6/9;
+  grid-row: 2/5;
+  padding: 10px;
+}
+.pack2 img {
+  width: 100%;
+  height: 50%;
+}
+.pack2 h1 {
+  color: green;
+  text-align: center;
+}
+#button1 {
+  background-color: transparent;
+  margin-top: 40px;
+  position: relative;
+  padding: 10px;
+  font-size: 20px;
+  color: #8e5cff;
+  top: -25px;
+  border-radius: 10px;
+}
+.packs .pack3 {
+  background-color: white;
+  border-radius: 10px;
+  grid-column: 10/13;
+  grid-row: 2/5;
+  padding: 10px;
+}
+.pack3 img {
+  width: 100%;
+  height: 50%;
+}
+.pack3 h1 {
+  color: cyan;
+  text-align: center;
+}
+#button1 {
+  background-color: transparent;
+  margin-top: 40px;
+  position: relative;
+  padding: 10px;
+  font-size: 20px;
+  color: #8e5cff;
+  top: -25px;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+.pack1:hover {
+  box-shadow: 0px 0px 30px 10px #8e5cff;
+}
+.pack2:hover {
+  box-shadow: 0px 0px 30px 10px green;
+}
+.pack3:hover {
+  box-shadow: 0px 0px 30px 10px cyan;
+}
+.pack1,
+.pack2,
+.pack3 {
+  transition: 1s;
+}
