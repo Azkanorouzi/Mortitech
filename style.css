@@ -222,7 +222,7 @@ div.background {
   width: 100%;
 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr .1fr .1fr;
   display: grid;
 }
 .packs .pack1 {
@@ -305,17 +305,123 @@ div.background {
   border: none;
   cursor: pointer;
 }
+.packs .pack4 {
+  background-color: white;
+  border-radius: 10px;
+  grid-column: 2/5;
+  grid-row: 6/9;
+  padding: 10px;
+}
+.pack4 img {
+  width: 100%;
+  height: 50%;
+}
+.pack4 h1 {
+  color: blue;
+  text-align: center;
+}
+#button1 {
+  background-color: transparent;
+  margin-top: 40px;
+  position: relative;
+  padding: 10px;
+  font-size: 20px;
+  color: #8e5cff;
+  top: -25px;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+.packs .pack5 {
+  background-color: white;
+  border-radius: 10px;
+  grid-column: 6/9;
+  grid-row: 6/9;
+  padding: 10px;
+}
+.pack5 img {
+  width: 100%;
+  height: 50%;
+}
+.pack5 h1 {
+  color:red;
+  text-align: center;
+}
+#button1 {
+  background-color: transparent;
+  margin-top: 40px;
+  position: relative;
+  padding: 10px;
+  font-size: 20px;
+  color: #8e5cff;
+  top: -25px;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+.packs .pack6 {
+  background-color: white;
+  border-radius: 10px;
+  grid-column: 10/13;
+  grid-row: 6/9;
+  padding: 10px;
+}
+.pack6 img {
+  width: 100%;
+  height: 50%;
+}
+.pack6 h1 {
+  color: yellowgreen;
+  text-align: center;
+}
+#button1 {
+  background-color: transparent;
+  margin-top: 40px;
+  position: relative;
+  padding: 10px;
+  font-size: 20px;
+  color: #8e5cff;
+  top: -25px;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
 .pack1:hover {
   box-shadow: 0px 0px 30px 10px #8e5cff;
+    transform: scale(1.1);
 }
 .pack2:hover {
   box-shadow: 0px 0px 30px 10px green;
+    transform: scale(1.1);
 }
 .pack3:hover {
   box-shadow: 0px 0px 30px 10px cyan;
+    transform: scale(1.1);
+}
+.pack4:hover {
+  box-shadow: 0px 0px 30px 10px blue;
+    transform: scale(1.1);
+}
+.pack5:hover {
+  box-shadow: 0px 0px 30px 10px red;
+    transform: scale(1.1);
+}
+.pack6:hover {
+  box-shadow: 0px 0px 30px 10px yellow;
+  transform: scale(1.1);
 }
 .pack1,
 .pack2,
-.pack3 {
+.pack3,
+.pack4,
+.pack5,
+.pack6 {
   transition: 1s;
 }
+
